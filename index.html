@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sketch Pad</title>
+    <link rel="stylesheet" href="styles.css"></link>
+    <script src="javascript.js"></script>
+    </head>
+<body>  
+    <div class="container">
+    <div class="title"><h1 >Etch A Sketch</h1></div>
+    <h5 style="color:antiquewhite">for custom size input a value between 1 to 100 and start drawing!<h5>
+        <div class="footer">
+            <input type="number" placeholder="size" >
+            <button type="button" class="btn" id="ok">Ok.</button>
+            <br>
+            <p class="msg"></p>
+        </div>
+        
+    <div class="header">
+    <div class="board"></div>
+    <div class="buttons" >
+        <button  type="button" class="btn" onclick="colorch('black')">Black</button>
+        <button type="button"  class="btn" onclick="colorch('white')">Eraser</button>
+        <button type="button"  class="btn" onclick="colorch('random')">HSL</button>
+        <button  type="button"  class="btn" onclick="reset()">Reset</button>
+    </div>
+    </div>
+    </div>
+</body>
+</html>
